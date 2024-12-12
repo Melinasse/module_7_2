@@ -1,7 +1,7 @@
 def custom_write(file_name, strings,):
     string_positions = {}
     file = open(file_name, 'w', encoding='utf-8')
-    for i , string in enumerate(strings, 1): # i - номер элемента списка, string - элемент спика, strings -итерируемый объект
+    for i , string in enumerate(strings, 1): # i - номер элемента списка, string - элемент спика, strings - итерируемый объект
         dots = file.tell()
         file.write(f'{string}\n')
         string_positions[(i, dots)] = string # Запись ключа в словарь в виде кортежа приравненному значению.
